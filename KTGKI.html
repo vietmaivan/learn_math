@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+	<title>Kiểm tra giữa kỳ 1</title></div>
+	<div align="left" span style="color:red;font-size:25px">Kiểm tra giữa kỳ 1</span></div>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+	<!--link bên dưới dùng để chạy latex-->
+	<script type = "text/javascript" async  src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+	</script>
+</head>
+<style>
+*{
+	margin: 0px;
+	padding: 15px;
+}
+button[type="submit"]{
+		border: 1px;
+		outline: blue;
+		width: 280px;
+		height: 50px;
+		background: #fb2525;
+		color: #fff;
+		font-size: 18px;
+		border-radius: 10px;
+		text-align: center;
+	}
+input[type="hoten"]{
+	margin: 5px;
+	padding: 5px;
+	width: 250px;
+	height: 25px;
+	color: blue;
+	font-size: 16px;
+	font-style: bold;
+	display:block;
+	border: 1px solid blue;
+	border-bottom: 3px solid blue;
+}
+input[type="lop"]{
+	margin: 5px;
+	padding: 5px;
+	width: 250px;
+	height: 25px;
+	color: blue;
+	font-size: 16px;
+	font-style: bold;
+	display:block;
+	border: 1px solid blue;
+	border-bottom: 3px solid blue;
+}
+p{
+	font-size: 20px;
+	margin: 5px;
+	}
+	
+::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+    color: blue;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* chạy trên Internet Explorer 10-11 */
+    color: blue;
+}
+
+::-ms-input-placeholder { /* chạy trên Microsoft Edge */
+    color: blue;
+}
+#quiz{
+margin: 5px;
+}
+textarea{
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbwC3nXZqStq5LzHfv7e5W7XJfe1CpwXbME_N7gG/exec">
+	<input type="hoten" name="Họ và tên" size="10"  placeholder="Nhập họ và tên"/>
+	<input type="lop" name="Lớp" size="30" placeholder="Nhập lớp"/>
+
+<div id="quiz">
+	<p>
+		Bài 1: (1.0 điểm) Tìm điều kiện của x để các căn thức sau có nghĩa:<br>
+	</p>
+		<img src="../image/KTGK1/1a.png"><br>
+		
+	<!--đoạn dữ liệu dài nên dùng textarea-->
+	<textarea id="c1" cols="100" rows="6" name="c1" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/1b.png"><br>
+		
+	<textarea id="c2" cols="100" rows="6" name="c2" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<p>
+		Bài 2: (2.0 điểm)  Tính: 
+	</p>
+	
+	<img src="../image/KTGK1/2a.png"><br>
+	
+	<textarea id="c3" cols="100" rows="6" name="c3" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/2b.png"><br>
+	
+	<textarea id="c4" cols="100" rows="6" name="c4" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/2c.png"><br>
+	
+	<textarea id="c5" cols="100" rows="6" name="c5" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/2d.png"><br>
+	
+	<textarea id="c6" cols="100" rows="6" name="c6" onkeyup="detectDirection(this);"></textarea><br>
+	
+	
+	<p>
+		Bài 3: (2.0 điểm) Giải phương trình
+	</p>
+	
+	<img src="../image/KTGK1/3a.png"><br>
+	
+	<textarea id="c7" cols="100" rows="6" name="c7" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/3b.png"><br>
+	
+	<textarea id="c8" cols="100" rows="6" name="c8" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<p>
+		Bài 4: (1.0 điểm) Chứng minh đẳng thức sau:<br>
+	</p>
+	
+	<img src="../image/KTGK1/4.png"><br>
+	
+	<textarea id="c9" cols="100" rows="6" name="c9" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/5.png"><br>
+	
+	<textarea id="c10" cols="100" rows="6" name="c10" onkeyup="detectDirection(this);"></textarea><br>
+	
+	<img src="../image/KTGK1/6.png"><br>
+	
+	<textarea id="c11" cols="100" rows="6" name="c11" onkeyup="detectDirection(this);"></textarea><br>
+
+</div>
+
+   <button type="submit"id="submit-form">GỞI DỮ LIỆU</button><br><br><br>
+   <a href="https://docs.google.com/spreadsheets/d/1Vlu_XcfAZjJ5_ze0htQDHOIM4E5HJLdTLxdKLRm0fds/edit#gid=1228797316" style="font-size: 20px; text-decoration:none; border:solid; border-radius: 10px;" target="blank">CLICK VÀO ĐỂ XEM ĐIỂM</a>
+   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script type="text/javascript">
+
+$(document).ready(function()
+ { 
+   var submit = $("button[type='submit']");
+   submit.click(function()
+               {
+                  var data = $('form#test-form').serialize();
+                  $.ajax({
+                            type : 'GET', 
+							url:'https://script.google.com/macros/s/AKfycbwC3nXZqStq5LzHfv7e5W7XJfe1CpwXbME_N7gG/exec',
+                            dataType:'json',
+                            crossDomain : true,
+                            data : data,
+                            success : function(data)
+                          { 
+                  if(data == 'false') 
+                          {
+                             alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+                          }else{
+                             alert('Đã thêm dữ liệu vào Form');
+                          }
+               }
+    });
+    return false;
+   });
+ });
+  
+  function ucwords(str,force){
+  str=force ? str.toLowerCase() : str;  
+  //return str.replace(/(\b)([a-zA-Z-đĐ])/g,
+  return str.replace(/(^([a-zA-Z-đĐ\p{M}]))|([ -][a-zA-Z-đĐ\p{M}])/g,
+           function(firstLetter){
+              return   firstLetter.toUpperCase();
+           });
+}
+
+$('input[type="fullname"]').keyup(function(evt){
+
+      // force: true to lower case all letter except first
+      //var cp_value= ucfirst($(this).val(),true) ;
+
+      // to capitalize all words  
+      //var cp_value= ucwords($(this).val(),true) ;
+		var cp_value= ucwords($(this).val(),true) ;
+
+      $(this).val(cp_value );
+
+   });
+   
+ </script>
+</form>
+</body>
+</html>
